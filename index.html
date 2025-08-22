@@ -1,146 +1,220 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Firdan - Portfolio</title>
-    <meta name="description" content="Portfolio profesional Firdan - Web Developer">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-</head>
-<body>
+    <meta
+      name="description"
+      content="Firdan's professional portfolio showcasing web development skills and projects"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">
-                <img src="assets/img/logo_profil.jpg" alt="Firdan" class="logo">
-                <span>Firdan</span>
-            </div>
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img src="assets/img/logo_profil.jpg" alt="Logo" class="logo" />
+          <span>Firdan</span>
         </div>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills & Study</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Hi, I'm <span>Firdan</span></h1>
-                <p class="hero-subtitle">Web Developer & Programmer</p>
-                <p class="hero-description">Creating simple and effective web solutions</p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Contact Me</a>
-                    <a href="https://wa.me/081994138846" class="btn btn-secondary">WhatsApp</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="assets/img/Firdan.jpg" alt="Firdan" class="profile-img">
-            </div>
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Hi, I'm <span class="highlight">Firdan</span>
+          </h1>
+          <p class="hero-subtitle">
+            Full Stack Developer & Creative Problem Solver
+          </p>
+          <p class="hero-description">
+            I create beautiful, functional, and user-friendly web applications
+            that solve real-world problems.
+          </p>
+          <div class="hero-buttons">
+            <a href="#skills" class="btn btn-primary">View My Skills & Study</a>
+            <a href="#contact" class="btn btn-secondary">Message Me</a>
+          </div>
         </div>
+      </div>
+      <div class="scroll-indicator">
+        <i class="fas fa-chevron-down"></i>
+      </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <img src="assets/img/logo_profil.jpg" alt="Firdan" class="about-img">
-                <div class="about-text">
-                    <p>Saya adalah seorang web developer yang berfokus pada pembuatan website yang responsif dan user-friendly. Dengan pengalaman dalam berbagai teknologi web modern.</p>
-                    <div class="about-info">
-                        <div class="info-item">
-                            <strong>Pendidikan:</strong>
-                            <p>SMKN 3 Metro - Rekayasa Perangkat Lunak</p>
-                        </div>
-                        <div class="info-item">
-                            <strong>Lokasi:</strong>
-                            <p>Metro, Lampung, Indonesia</p>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-image">
+            <img
+              src="assets/img/logo_profil.jpg"
+              alt="Firdan Profile Photo"
+              class="profile-photo"
+              style="max-width: 250px; height: 250px"
+            />
+            
+            <!-- Special Section for Favorite Person -->
+            <div class="favorite-person-section">
+              <img
+                src="assets/img/Favorite_Person.jpeg"
+                alt="Favorite Person"
+                class="favorite-photo"
+              />
+              <div class="favorite-caption">
+                <h3>My Inspiration</h3>
+                <p>Someone very special who inspires me every day</p>
+              </div>
             </div>
+          </div>
+          <div class="about-text">
+            <p>
+              Nama saya Firdan Syauqie Basrie, siswa SMKN 3 Metro jurusan
+              Rekayasa Perangkat Lunak. Saya memiliki minat besar dalam dunia
+              pemrograman, khususnya pengembangan web. Saya percaya teknologi
+              dapat memudahkan kehidupan dan saya ingin menjadi bagian dari
+              perubahan itu.
+            </p>
+            <p>
+              Saya mengkhususkan diri dalam JavaScript, PHP, Python, dan
+              berbagai teknologi lainnya. Saya percaya dalam menulis kode yang
+              bersih dan mudah dipelihara serta menciptakan pengalaman pengguna
+              yang indah dan fungsional.
+            </p>
+            <div class="about-stats">
+              <div class="stat">
+                <h3>3+</h3>
+                <p>Projects Completed</p>
+              </div>
+              <div class="stat">
+                <h3>0+</h3>
+                <p>Years Experience</p>
+              </div>
+              <div class="stat">
+                <h3>0+</h3>
+                <p>Happy Clients</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills" class="skills">
-        <div class="container">
-            <h2>Skills & Expertise</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>Frontend</h3>
-                    <div class="skill-tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <h3>Backend</h3>
-                    <div class="skill-tags">
-                        <span>PHP</span>
-                        <span>Python</span>
-                        <span>MySQL</span>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <h3>Tools</h3>
-                    <div class="skill-tags">
-                        <span>Git</span>
-                        <span>VS Code</span>
-                        <span>Responsive Design</span>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title">Skills & Study</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Frontend</h3>
+            <div class="skill-items">
+              <span class="skill-item">HTML</span>
+              <span class="skill-item">CSS</span>
+              <span class="skill-item">JavaScript</span>
+              <span class="skill-item">PHP</span>
+              <span class="skill-item">Python</span>
             </div>
+          </div>
+          <div class="skill-category">
+            <h3>Study</h3>
+            <div class="skill-items">
+              <span class="skill-item">SDN 1 Wana</span>
+              <span class="skill-item">MTSN 1 Lam-Tim</span>
+              <span class="skill-item">SMKN 3 Metro</span>
+              <span class="skill-item">Wish ITB <br>(Institut Teknologi Bandung)</span>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="container">
-            <h2>Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Contact Information</h3>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>Whyya9@gmail.com</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <span>+62 819-9413-8846</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Metro, Indonesia</span>
-                    </div>
-                </div>
-                <form class="contact-form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" rows="5" required></textarea>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
+      <div class="container">
+        <h2 class="section-title">Message</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Hubungi saya</h3>
+            <p>
+              Saya selalu tertarik dengan peluang baru dan proyek menarik.
+              Jika Anda memiliki pertanyaan atau hanya ingin menyapa, saya akan
+              berusaha untuk membalas Anda!
+            </p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>firdan@example.com</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span>+62 819-9413-8846</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Metro, Lampung</span>
+              </div>
             </div>
+            <div class="social-links">
+              <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <form class="contact-form">
+            <div class="form-group">
+              <input type="text" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Your Email" required />
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Subject" required />
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Firdan. All rights reserved.</p>
-        </div>
+      <div class="container">
+        <p>&copy; 2024 Firdan. All rights reserved. Built with ❤️ and code.</p>
+      </div>
     </footer>
 
     <script src="assets/js/script.js"></script>
-</body>
+  </body>
 </html>
