@@ -34,6 +34,7 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 60px;
+  padding: 0 20px;
 }
 
 .nav-logo {
@@ -42,22 +43,27 @@ body {
   font-weight: 700;
   font-size: 1.5rem;
   cursor: pointer;
+  padding-left: 1px;
 }
 
 .nav-logo .logo {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   margin-right: 10px;
+
 }
 
 .nav-menu {
   list-style: none;
   display: flex;
+  padding-left: 12px;
+  gap: 12px;
 }
 
 .nav-menu li {
   margin-left: 20px;
+  padding-right: 5px;
 }
 
 .nav-link {
@@ -92,7 +98,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 120px 20px 80px;
-  background: url("../img/Firdan.jpg") no-repeat center center/cover;
+  background: url("../img/Background_beranda.jpg") no-repeat center center/cover;
   color: white;
   min-height: 100vh;
   position: relative;
@@ -145,12 +151,18 @@ body {
   margin-bottom: 30px;
 }
 
+.hero-buttons {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  align-items: center; /* Center align buttons */
+}
+
 .hero-buttons .btn {
   padding: 12px 30px;
   border-radius: 30px;
   font-weight: 600;
   text-decoration: none;
-  margin-right: 15px;
+  margin: 10px 0; /* Updated margin for better spacing */
   transition: background-color 0.3s ease;
 }
 
@@ -198,102 +210,103 @@ body {
 
 /* About Section */
 .about {
-    padding: 80px 20px;
-    background-color: white;
-    color: #333;
-    position: relative;
-    z-index: 1;
+  padding: 80px 20px;
+  background-color: white;
+  color: #333;
+  position: relative;
+  z-index: 1;
 }
 
 .section-title {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    font-weight: 700;
-    color: #4f46e5;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+  color: #4f46e5;
 }
 
 .about-content {
-    max-width: 900px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .about-image {
-    flex: 0 0 300px;
+  flex: 0 0 300px;
 }
 
 .profile-photo {
-    width: 100%;
-    max-width: 300px;
-    height: 300px;
-    border-radius: 10px;
-    object-fit: cover;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    border: 3px solid #E0E7FF;
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border: 3px solid #e0e7ff;
+  z-index: 2; /* Added z-index to ensure clickability */
 }
 
 .favorite-photo {
-    width: 180px;
-    height: 180px;
-    border-radius: 10px;
-    object-fit: cover;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    display: block;
-    margin: 0 auto;
+  width: 180px;
+  height: 180px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 auto;
 }
 
 .favorite-person-section {
-    margin-top: 30px;
-    padding: 20px;
-    background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
-    border-radius: 15px;
-    text-align: center;
-    border: 2px solid #e0e7ff;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  padding: 20px;
+  background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+  border-radius: 15px;
+  text-align: center;
+  border: 2px solid #e0e7ff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .favorite-caption {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 .favorite-caption h3 {
-    color: #4f46e5;
-    font-size: 1.3rem;
-    margin-bottom: 8px;
-    font-weight: 600;
+  color: #4f46e5;
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  font-weight: 600;
 }
 
 .favorite-caption p {
-    color: #6b7280;
-    font-size: 0.95rem;
-    font-style: italic;
+  color: #6b7280;
+  font-size: 0.95rem;
+  font-style: italic;
 }
 
 .about-text {
-    flex: 1;
+  flex: 1;
 }
 
 .about-text p {
-    margin-bottom: 20px;
-    font-size: 1.1rem;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
 }
 
 .about-stats {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
 }
 
 .stat h3 {
-    font-size: 2rem;
-    color: #fbbf24;
+  font-size: 2rem;
+  color: #fbbf24;
 }
 
 .stat p {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 /* Skills Section */
@@ -340,7 +353,6 @@ body {
   font-weight: 600;
   font-size: 0.9rem;
 }
-
 
 /* Contact Section */
 .contact {
@@ -482,6 +494,21 @@ button.btn-primary:hover {
     text-align: center;
   }
 
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-buttons .btn {
+    margin-right: 0;
+    margin-bottom: 15px;
+    width: 200px;
+  }
+
+  .hero-buttons .btn:last-child {
+    margin-bottom: 0;
+  }
+
   .about-stats {
     flex-direction: column;
   }
@@ -491,11 +518,11 @@ button.btn-primary:hover {
     text-align: center;
     gap: 30px;
   }
-  
+
   .about-image {
     flex: 0 0 auto;
   }
-  
+
   .profile-photo {
     max-width: 250px;
     height: 250px;
