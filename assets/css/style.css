@@ -246,6 +246,7 @@ body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   border: 3px solid #e0e7ff;
   z-index: 2; /* Added z-index to ensure clickability */
+  cursor: pointer; /* Added cursor to indicate clickability */
 }
 
 .favorite-photo {

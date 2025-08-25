@@ -1,5 +1,13 @@
-// Mobile Navigation Toggle
 document.addEventListener("DOMContentLoaded", function () {
+  // Profile photo click event
+  const profilePhoto = document.getElementById("profile-photo");
+  if (profilePhoto) {
+    profilePhoto.addEventListener("click", function() {
+      alert("Profile photo clicked!");
+    });
+  }
+  
+  // Mobile Navigation Toggle
   const hamburger = document.querySelector(".hamburger");
   const navMenu = document.querySelector(".nav-menu");
   const navLinks = document.querySelectorAll(".nav-link");
